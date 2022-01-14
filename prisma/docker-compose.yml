@@ -1,10 +1,10 @@
-version: '3'
+version: "3"
 services:
   prisma:
     image: prismagraphql/prisma:1.13.4
     restart: always
     ports:
-    - "4466:4466"
+      - "4466:4466"
     environment:
       PRISMA_CONFIG: |
         port: 4466
@@ -13,10 +13,10 @@ services:
         databases:
           default:
             connector: postgres
-            host: ec2-50-16-241-91.compute-1.amazonaws.com
+            host: ec2-34-195-143-54.compute-1.amazonaws.com
             port: '5432'
-            database: d63k1orhak3ro8
+            database: d8r2f43gmu5757
             ssl: true
-            user: ijgyrvqtpinnqe
-            password: 45c5b8e5eb835c06d51150e5869b655590c01d0ace319ac6bb8e01cfa57f55b2
+            user: gwxcbrqlajitee
+            password: c14f439cd712cb9c1a531b370ef6614a50ddafd445f4a311821abf55414dcb35
             migrations: true
